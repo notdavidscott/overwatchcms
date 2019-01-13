@@ -4,7 +4,7 @@ import { PropTypes } from "prop-types";
 import { connect } from "react-redux";
 import FadeIn from "react-fade-in";
 
-class Landing extends Component {
+class About extends Component {
   render() {
     return (
       <div className="landing">
@@ -16,7 +16,7 @@ class Landing extends Component {
                   <h1 className="display-3 mb-4 brand-text">OVERWATCH</h1>
                   <p className="lead">
                     {" "}
-                    Organization management made simple.
+                   About stuff
                   </p>
                   <hr />
                   <div>
@@ -41,7 +41,7 @@ class Landing extends Component {
   }
 }
 
-Landing.propTypes = {
+About.propTypes = {
   auth: PropTypes.object.isRequired
 };
 
@@ -49,4 +49,4 @@ const mapStateToProps = state => ({
   auth: state.auth
 });
 
-export default connect(mapStateToProps)(Landing);
+export default connect(mapStateToProps)(About);

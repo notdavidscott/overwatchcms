@@ -80,7 +80,7 @@ class NavbarMain extends Component {
           <div className="dropdown-menu" aria-labelledby="navbarDropdown">
             <Link className="dropdown-item" to="/communities">Communities</Link>
             <div className="dropdown-divider"></div>
-            <Link className="dropdown-item" to="/feed">Collective</Link>
+            <Link className="dropdown-item" to="/feed">Overwatch</Link>
             <Link className="dropdown-item" to="/missions">Missions</Link>
             <Link className="dropdown-item" to="/outdoors">Outdoors</Link>
           </div>
@@ -131,9 +131,12 @@ class NavbarMain extends Component {
     const guestLinks = (
       <Nav className="ml-auto" navbar>
          <NavItem onClick={this.closeNavbar} className="nav-item">
-          <Link className="nav-link" to="/register">
-            Sign Up
-          </Link>
+          {/* <Link className="nav-link" to="/register">
+            Register
+          </Link> */}
+          <Link className="nav-link" to="/about">
+            About
+          </Link> 
         </NavItem>
 
         <NavItem onClick={this.closeNavbar} className="nav-item">
@@ -148,7 +151,7 @@ class NavbarMain extends Component {
       //this starts the whole navbar
       <Navbar className="navigation_navbar navbar-color sticky-top navbar-expand-sm navbar-dark">
         <Container>
-        <NavbarBrand onClick={this.closeNavbar} className="mr-auto"><Link className="navbar-brand" to="/">Collective</Link></NavbarBrand>
+        <NavbarBrand onClick={this.closeNavbar} className="mr-auto"><Link className="navbar-brand" to="/">OVERWATCH</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
           

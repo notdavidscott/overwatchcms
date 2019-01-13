@@ -2,7 +2,6 @@
 /* 
 font-family: 'Caveat', cursive;
 font-family: 'Montserrat', sans-serif;
-
 */
 
 textarea:focus,
@@ -14,18 +13,21 @@ img {
   width: 100%;
 }
 
-
-
 nav li a:hover {
   color: #dcae1d !important;
   transition: cubic-bezier(1, 0, 0, 1), 1s;
 }
 
 .navbar-color {
-  background-color: rgba(17, 17, 17, 0.801);
+  background-color: rgba(30, 64, 114, 0.89);
 }
+
 .avatar-nav {
   margin: 7px 8px 0px 8px;
+}
+.login-button {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .post {
@@ -96,10 +98,16 @@ nav li a:hover {
 }
 .landing {
   position: relative;
-  background: url("https://images.pexels.com/photos/1275393/pexels-photo-1275393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("./img/hills-calm-colors.jpeg");
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+.brand-text {
+  color: rgb(255, 255, 255);
+  font-size: 10vh;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
 }
 .create-profile {
   margin-top: 20px;
@@ -131,12 +139,7 @@ nav li a:hover {
 .landing-inner {
   padding-top: 80px;
 }
-.brand-text {
-  color: rgb(218, 175, 36);
-  font-size: 10vh;
-  font-family: "Caveat", cursive;
-  letter-spacing: 1px;
-}
+
 .gold-text {
   color: rgb(230, 185, 39);
 }
@@ -215,6 +218,12 @@ nav li a:hover {
 }
 
 @media (max-width: 700px) {
+  .brand-text {
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+  }
   .container {
     padding: 0 2%;
   }

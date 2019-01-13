@@ -12,10 +12,6 @@ const ProfileSchema = new Schema({
     required: true,
     max: 40
   },
-  // avatar: {
-  //   type:  String,
-  //  g default: 'http://notdavidscott.com/images/collective/profilepicture.png'
-  // },
   company: {
     type: String
   },

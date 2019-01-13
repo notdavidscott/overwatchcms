@@ -7,6 +7,7 @@ import PrivateRoute from "./components/common/PrivateRoute";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Landing from "./components/layout/Landing";
+import About from "./components/layout/About";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import Dashboard from "./components/dashboard/Dashboard";
@@ -82,6 +83,7 @@ function Routes({ auth }) {
                 
                 <Switch>
                     <Route exact path="/" component={Landing} />
+                    <Route exact path="/about" component={About} />
                     <Route exact path="/register" component={Register} />
                     <Route exact path="/login" component={Login} />
                     <Route exact path="/not-found" component={NotFound} />

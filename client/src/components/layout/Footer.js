@@ -4,7 +4,7 @@ export default () => {
   return (
     <footer className="navbar-color text-white
      p-4 text-center">
-      Copyright &copy; {new Date().getFullYear()} Collective
+      Copyright &copy; {new Date().getFullYear()} OVERWATCH by Morning Glory Studios
     </footer>
   );
 };
