@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
-import classnames from 'classnames';
 
 import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 import { editPost } from '../../actions/postActions';

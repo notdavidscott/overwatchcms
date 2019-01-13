@@ -1,13 +1,11 @@
 import axios from "axios";
 
 import {
-  ADD_COMMENT,
   GET_ERRORS,
   CLEAR_ERRORS,
   GET_COMMENTS,
   GET_COMMENT,
   COMMENT_LOADING,
-  DELETE_COMMENT,
   EDIT_COMMENT
 } from "./types";
 

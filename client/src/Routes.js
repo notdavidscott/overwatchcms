@@ -26,13 +26,6 @@ import Post from "./components/post/Post";
 import Events from "./components/events/Events";
 import PostEvents from "./components/post-events/PostEvents";
 
-//missions posts and commenting
-import PostsMissions from "./components/posts-missions/PostsMissions";
-import PostMissions from "./components/post-missions/PostMissions";
-
-import PostsOutdoors from "./components/posts-outdoors/PostsOutdoors";
-import PostOutdoors from "./components/post-outdoors/PostOutdoors";
-
 import NotFound from "./components/not-found/NotFound";
 
 import "./App.css";
@@ -77,26 +70,6 @@ function Routes({ auth }) {
                     />
                     <PrivateRoute exact path="/events" component={Events} />
                     <PrivateRoute path="/event/:id" component={PostEvents} />
-                    <PrivateRoute
-                    exact
-                    path="/missions"
-                    component={PostsMissions}
-                    />
-                    <PrivateRoute
-                    exact
-                    path="/missions/post/:id"
-                    component={PostMissions}
-                    />
-                    <PrivateRoute
-                    exact
-                    path="/outdoors"
-                    component={PostsOutdoors}
-                    />
-                    <PrivateRoute
-                    exact
-                    path="/outdoors/post/:id"
-                    component={PostOutdoors}
-                    />
                     <PrivateRoute exact path="/communities" component={Groups} />
                     <PrivateRoute exact path="/add-group" component={AddGroup} />
                     <PrivateRoute exact path="/feed" component={Posts} />

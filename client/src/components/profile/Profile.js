@@ -23,7 +23,7 @@ class Profile extends Component {
 
   render() {
 
-    editProfile = (
+    let editProfile = (
       
       <div className="row">
       <div className="col-md-1"></div>
@@ -88,8 +88,6 @@ class Profile extends Component {
       );
       
     }
-
-    let editProfile;
 
    
 

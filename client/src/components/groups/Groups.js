@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import FadeIn from "react-fade-in";
-import HelpModal from "../dashboard/HelpModal";
 
 // this file is called Groups.js, but is it's UI pieces are referred to as "Communities"
 
@@ -152,7 +151,7 @@ class Groups extends Component {
             </div>
           </div>
         </FadeIn>
-        <HelpModal />
+       
         <div style={{ marginBottom: "50px" }} />
       </div>
     );

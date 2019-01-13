@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
@@ -48,9 +48,8 @@ class NavbarMain extends Component {
       isAuthenticated,
       //user
     } = this.props.auth;
-    const handle = this.props.profile;
-
-    const { profile, loading } = this.props.profile;
+    
+    const { profile } = this.props.profile;
 
     let profileLink = "";
     if(Object.keys(profile || {}).length > 0) {

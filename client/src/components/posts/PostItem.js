@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
-import { deletePost, addLike, removeLike, addCommentLike, removeCommentLike } from '../../actions/postActions';
+import { deletePost, addLike, removeLike } from '../../actions/postActions';
 
 import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 import FadeIn from 'react-fade-in';
@@ -42,7 +42,7 @@ class PostItem extends Component {
   }
 
   renderText = () => {
-    const { post, profile } = this.props;
+    const { post } = this.props;
    // console.log('post', post);
     const { isEditting } = this.state;
     return isEditting ? <EditPostForm post={post} /> : <p className="lead post-text">{post.text}</p>;

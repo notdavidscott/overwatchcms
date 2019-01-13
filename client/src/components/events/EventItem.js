@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { deletePost, addLike, removeLike } from "../../actions/postActions";
+import { addLike, removeLike } from "../../actions/postActions";
 import classnames from "classnames";
 import Moment from 'react-moment';
 
@@ -12,7 +12,6 @@ import {
   notGoingToEvent,
   interestedInEvent
 } from "../../actions/eventActions";
-import Events from "./Events";
 import FadeIn from "react-fade-in/lib/FadeIn";
 
 class EventItem extends Component {

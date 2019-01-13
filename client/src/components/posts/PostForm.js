@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 import { addPost, editPost } from '../../actions/postActions';
-// import { Link, withRouter } from 'react-router-dom';
-import EditPostForm from '../edit-posts/EditPostForm';
 
 class PostForm extends Component {
   constructor(props) {
@@ -30,7 +28,7 @@ class PostForm extends Component {
   onSubmit(e) {
     e.preventDefault();
   
-    const { user, profile } = this.props.auth;
+    const { user } = this.props.auth;
 
     const newPost = {
       text: this.state.text,

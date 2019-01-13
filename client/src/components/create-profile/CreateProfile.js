@@ -7,7 +7,6 @@ import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
 import InputGroup from '../common/InputGroup';
 import SelectListGroup from '../common/SelectListGroup';
 import { createProfile } from '../../actions/profileActions';
-import HelpModal from '../dashboard/HelpModal';
 // test commit 
 
 
@@ -258,7 +257,6 @@ class CreateProfile extends Component {
             </div>
           </div>
         </div>
-        <HelpModal />
         <div style={{ marginBottom: "50px" }} />
       </div>
     );

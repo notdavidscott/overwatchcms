@@ -8,9 +8,6 @@ import ProfileActions from "./ProfileActions";
 import Experience from "./Experience";
 import Education from "./Education";
 import Group from "./Group";
-import PopupModal from './Modal';
-import HelpModal from './HelpModal';
-import Posts from "../posts-dashboard/Posts"
 
 
 class Dashboard extends Component {
@@ -20,7 +17,7 @@ class Dashboard extends Component {
 
   render() {
     const { user } = this.props.auth;
-    const { profile, loading, handle } = this.props.profile;
+    const { profile, loading } = this.props.profile;
     let dashboardContent;
 
     if (profile === null || loading) {
@@ -37,14 +34,14 @@ class Dashboard extends Component {
                 <span className="gold-text">{user.name}</span>
               </Link>
             </p>
-            <Posts />
+           
               <br/>
             <ProfileActions />
 
             <Experience experience={profile.experience} />
             <Education education={profile.education} />
             <Group group={profile.group} />
-            <HelpModal />
+          
             <div style={{ marginBottom: "60px" }} />
           </div>
         );
@@ -53,8 +50,8 @@ class Dashboard extends Component {
         dashboardContent = (
           <div className="welcome-page">
             <p className="lead text-muted">Welcome {user.name}</p>
-            <p>Before you get started click below!</p>
-            <PopupModal />
+            <p>Text to be added, regarding the intro</p>
+           
             <br />
             <br />
             <p>You have not yet setup a profile, please add some info</p>

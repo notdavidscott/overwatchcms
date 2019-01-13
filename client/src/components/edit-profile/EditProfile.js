@@ -12,9 +12,6 @@ import {
   deleteAccount,
 } from "../../actions/profileActions";
 import isEmpty from "../../validation/is-empty";
-import HelpModal from '../dashboard/HelpModal';
-import ProfileActions from "../dashboard/ProfileActions";
-import ProfileAvatar from "../profile/ProfileAvatar";
 
 class CreateProfile extends Component {
   constructor(props) {
@@ -216,7 +213,7 @@ class CreateProfile extends Component {
                 Go Back
               </Link>
               <div className="edit-profile-img m-auto"> 
-            <img className="rounded-circle" src={this.state.avatar} />
+            <img className="rounded-circle" alt="avatar" src={this.state.avatar} />
                 </div> 
               <h1 className="display-4 text-center">Edit Profile</h1>
               <small className="d-block pb-3">* = required fields</small>
@@ -337,7 +334,7 @@ class CreateProfile extends Component {
           </Link>
         </div>
         <hr />
-        <HelpModal />
+       
         <div style={{ marginBottom: "50px" }} />
       </div>
     );

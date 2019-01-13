@@ -7,8 +7,6 @@ import CommentForm from "./CommentForm";
 import CommentFeed from "./CommentFeed";
 import Spinner from "../common/Spinner";
 import { getPost } from "../../actions/postActions";
-import HelpModal from '../dashboard/HelpModal';
-import ProfileHeader from '../profile/ProfileHeader';
 
 class Post extends Component {
   componentDidMount() {
@@ -44,7 +42,7 @@ class Post extends Component {
             </div>
           </div>
         </div>
-        <HelpModal />
+       
         <div style={{ marginBottom: "50px" }} />
       </div>
     );

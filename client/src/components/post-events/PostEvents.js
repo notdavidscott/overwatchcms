@@ -6,8 +6,6 @@ import Spinner from "../common/Spinner";
 import { getEvent } from "../../actions/eventActions";
 import EventItem from "../events/EventItem";
 import CommentForm from './CommentForm';
-import EventForm from "../events/EventForm";
-import { EVENT_LOADING } from "../../actions/types";
 import CommentFeed from './CommentFeed';
 
 class Post extends Component {

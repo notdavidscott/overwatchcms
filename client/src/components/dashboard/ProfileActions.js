@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Events from '../events-dashboard/Events';
 import ProfileAvatar from '../profile/ProfileAvatar';
 
 const ProfileActions = () => {
@@ -49,16 +48,13 @@ const ProfileActions = () => {
         </div>
         
         <div className="col-sm-12">
-        <a className="btn btn-block btn-light" href="https://docs.google.com/forms/d/e/1FAIpQLSd8UG6Tyg4ZmbunLP6R-8HCO8kJApx3HtBk6X8_QLGgSdNPGQ/viewform?usp=sf_link" target="_blank">
+        <a className="btn btn-block btn-light" href="https://docs.google.com/forms/d/e/1FAIpQLSd8UG6Tyg4ZmbunLP6R-8HCO8kJApx3HtBk6X8_QLGgSdNPGQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer"> 
         <i className="fas fa-microphone text-warning"></i> Collective Feedback
         </a>
         </div>
         </div> 
         <div className="col-md-6">
-         <div className="events-dashboard">
-      
-        <Events />
-        </div>
+        
         </div>
         </div>
       </div>

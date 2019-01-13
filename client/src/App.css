@@ -214,33 +214,6 @@ nav li a:hover {
   border-radius: 0px;
 }
 
-/*POPUP MODAL STYLING*/
-.backdropStyle {
-  position: "fixed";
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-}
-.modalStyle {
-  margin: 0px;
-  padding: 10%;
-  overflow: scroll;
-}
-.modeltext {
-  padding: 10vw;
-  overflow: scroll;
-}
-
-.modalbutton {
-  float: right;
-}
-
-.modalWrapper {
-  height: 400px;
-}
-
 @media (max-width: 700px) {
   .container {
     padding: 0 2%;
@@ -254,9 +227,6 @@ nav li a:hover {
     border-radius: 8px;
     margin: 10% 2%;
     padding: 10% 5%;
-  }
-  .events-dashboard {
-    margin-top: 30px;
   }
   .avatar-nav {
     margin: 7px 0px;
