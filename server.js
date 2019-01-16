@@ -26,7 +26,7 @@ mongoose
     db,
     { useNewUrlParser: true }
   )
-  .then(() => console.log("***Code strong and make America Great Again***"))
+  .then(() => console.log("...Atlas Connected..."))
   .catch(err => console.log(err, "The database is unable to connect"));
 
 // Passport middleware

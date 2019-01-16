@@ -19,7 +19,7 @@ nav li a:hover {
 }
 
 .navbar-color {
-  background-color: rgba(30, 64, 114, 0.89);
+  background-color: rgba(30, 64, 114, 0.938);
 }
 
 .avatar-nav {
@@ -39,7 +39,7 @@ nav li a:hover {
 }
 
 .login {
-  background-image: url("https://images.pexels.com/photos/277559/pexels-photo-277559.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("./img/aerial-town.jpg");
   background-size: cover;
   background-position: center;
   height: 120vh;
@@ -55,7 +55,7 @@ nav li a:hover {
 }
 
 .register {
-  background-image: url("https://images.pexels.com/photos/439858/pexels-photo-439858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260  ");
+  background-image: url("./img/aerial-city.jpg");
   background-size: cover;
   background-position: center;
   height: 120vh;
@@ -93,9 +93,6 @@ nav li a:hover {
   margin-top: 20px;
 }
 
-.feed {
-  margin-top: 20px;
-}
 .landing {
   position: relative;
   background: url("./img/hills-calm-colors.jpeg");
@@ -140,9 +137,18 @@ nav li a:hover {
   padding-top: 80px;
 }
 
-.gold-text {
-  color: rgb(230, 185, 39);
+.blue-text {
+  color: rgba(30, 64, 114, 0.938);
 }
+
+.icon-sizing-1 {
+  font-size: 2em;
+}
+.dashboard-option {
+  padding: 45px;
+  margin: 10px 0px;
+}
+
 .red-button {
   background-color: rgb(241, 86, 86);
   color: white;
@@ -211,6 +217,17 @@ nav li a:hover {
 .post-form {
   background-color: rgb(204, 204, 204);
 }
+.btn-primary {
+  background-color: rgba(30, 64, 114, 0.938);
+  border: none;
+  transition: .5s;
+}
+.btn-primary:hover {
+  background-color: rgba(59, 94, 146, 0.938);
+  border: none;
+  transition: .5s;
+}
+
 
 .post-card {
   background-color: rgb(247, 247, 247);
@@ -218,6 +235,17 @@ nav li a:hover {
 }
 
 @media (max-width: 700px) {
+
+  .dashboard-option-text {
+    font-size: 10px;
+    
+  }
+
+  .dashboard-option {
+    padding: 10px;
+    margin: 8px 0px;
+  }
+
   .brand-text {
     color: rgb(255, 255, 255);
     font-size: 3em;

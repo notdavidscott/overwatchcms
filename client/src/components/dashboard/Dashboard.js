@@ -31,16 +31,16 @@ class Dashboard extends Component {
             <p className="lead text-muted">
               Welcome{" "}
               <Link to={`/profile/${profile.handle}`}>
-                <span className="gold-text">{user.name}</span>
+                <span className="blue-text">{user.name}</span>
               </Link>
             </p>
            
               <br/>
             <ProfileActions />
 
-            <Experience experience={profile.experience} />
+            {/* <Experience experience={profile.experience} />
             <Education education={profile.education} />
-            <Group group={profile.group} />
+            <Group group={profile.group} /> */}
           
             <div style={{ marginBottom: "60px" }} />
           </div>

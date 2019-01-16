@@ -73,29 +73,26 @@ class NavbarMain extends Component {
           </Link>
        </NavItem>
        <NavItem onClick={this.closeNavbar} className="nav-item">
-        <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" to="/communities" id="navbarDropdown" role="button" data-toggle="dropdown">
-            Communities
+       <Link className="nav-link" to="/people">
+            People
           </Link>
-          <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <Link className="dropdown-item" to="/communities">Communities</Link>
-            <div className="dropdown-divider"></div>
-            <Link className="dropdown-item" to="/feed">Overwatch</Link>
-            <Link className="dropdown-item" to="/missions">Missions</Link>
-            <Link className="dropdown-item" to="/outdoors">Outdoors</Link>
-          </div>
-        </li>
       </NavItem>
+       <NavItem onClick={this.closeNavbar} className="nav-item">
+       <Link className="nav-link" to="/groups">
+            Groups
+          </Link>
+      </NavItem>
+      
 
-         <NavItem onClick={this.closeNavbar} className="nav-item">
+         {/* <NavItem onClick={this.closeNavbar} className="nav-item">
          <Link className="nav-link" to="/events">
            Events
           </Link>
-        </NavItem>
+        </NavItem> */}
 
-       <NavItem onClick={this.closeNavbar} className="nav-item">
+       {/* <NavItem onClick={this.closeNavbar} className="nav-item">
         {profileLink}
-      </NavItem>
+      </NavItem> */}
         <li className="nav-item">
             <a
             href="/"
@@ -119,7 +116,7 @@ class NavbarMain extends Component {
           <Link className="nav-link" to="/profiles">
           
             {' '}
-            Friends
+            Team
           </Link>
           
         </NavItem>
