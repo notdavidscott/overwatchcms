@@ -100,6 +100,33 @@ nav li a:hover {
   background-position: center;
   height: 100vh;
 }
+
+.about {
+  position: relative;
+  background:  url("./img/mountains-valley.jpg"); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.about-2 {
+  position: relative;
+  background: linear-gradient(166deg, rgba(66, 135, 181, 0.404) 0%, rgba(82, 102, 218, 0.479) 100%, rgba(193, 46, 149, 0.336) 100%),
+  url("./img/buildings-aerial.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.about-3 {
+  position: relative;
+  background: linear-gradient(350deg, rgba(105, 100, 180, 0.555) 0%, rgba(53, 53, 136, 0.397) 35%, rgba(209, 209, 209, 0.418) 100%),
+  url("./img/bridge.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
 .brand-text {
   color: rgb(255, 255, 255);
   font-size: 10vh;
