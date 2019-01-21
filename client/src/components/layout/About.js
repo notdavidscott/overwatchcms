@@ -28,21 +28,22 @@ class About extends Component {
       <div className="about-2">
       </div>
       <div className="about-3">
+
       <FadeIn>
       <div>
-                    <Link
-                      to="/register"
-                      className="btn btn-lg btn-outline-light mr-2 login-button">
-                      Register
-                    </Link>
-                    <br />
-                    <Link to="/login" className="btn btn-lg btn-outline-light login-button">
-                      Login
-                    </Link>
-                  </div>
-                  </FadeIn>
+                <Link
+                  to="/register"
+                  className="btn btn-lg btn-outline-light mr-2 login-button">
+                  Register
+                </Link>
+                <br />
+                <Link to="/login" className="btn btn-lg btn-outline-light login-button">
+                  Login
+                </Link>
       </div>
-      
+      </FadeIn>
+
+      </div>
     </div>
     );
   }

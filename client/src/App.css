@@ -61,6 +61,9 @@ nav li a:hover {
   height: 120vh;
   padding-top: 3%;
 }
+.members {
+  height: 100vh;
+}
 
 .dashboard {
   margin-top: 20px;

@@ -18,18 +18,18 @@ const ProfileActions = () => {
       <br/>
       <div class="dashboard-options">
      <div class="row">
+     <div className="col-sm-12 col-md-4 col-lg-3">
+        <Link to="/members" className="btn btn-block btn-light dashboard-option">
+        <i className="fas fa-users blue-text icon-sizing-1" /><br/>
+           Members
+        </Link> 
+     </div>
         <div className="col-sm-12 col-md-4 col-lg-3">
         <Link to="/add-experience" className="btn btn-block btn-light dashboard-option"> 
         <i className="fas fa-user-circle blue-text icon-sizing-1" /><br/>
             Reminders
         </Link>
        </div>
-       <div className="col-sm-12 col-md-4 col-lg-3">
-        <Link to="/add-education" className="btn btn-block btn-light dashboard-option">
-        <i className="fas fa-users blue-text icon-sizing-1" /><br/>
-           Members
-        </Link> 
-     </div>
      <div className="col-sm-12 col-md-4 col-lg-3">
         <Link to="/add-interests" className="btn btn-block btn-light dashboard-option">
         <i className="fas fa-briefcase blue-text icon-sizing-1" /><br/>

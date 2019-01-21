@@ -21,6 +21,8 @@ import Profiles from "./components/profiles/Profiles";
 import Profile from "./components/profile/Profile";
 import Groups from "./components/groups/Groups";
 
+import Members from "./components/members/Members";
+
 import Posts from "./components/posts/Posts";
 import Post from "./components/post/Post";
 
@@ -63,6 +65,11 @@ function Routes({ auth }) {
                     exact
                     path="/add-education"
                     component={AddEducation}
+                    />
+                <PrivateRoute
+                    exact
+                    path="/members"
+                    component={Members}
                     />
                     <PrivateRoute
                     exact
