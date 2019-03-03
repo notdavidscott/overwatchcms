@@ -21,6 +21,7 @@ import Profiles from "./components/profiles/Profiles";
 import Profile from "./components/profile/Profile";
 import Groups from "./components/groups/Groups";
 
+import Member from "./components/member/Member";
 import Members from "./components/members/Members";
 
 import Posts from "./components/posts/Posts";
@@ -70,6 +71,11 @@ function Routes({ auth }) {
                     exact
                     path="/members"
                     component={Members}
+                    />
+                <PrivateRoute
+                    exact
+                    path="/members/:id"
+                    component={Member}
                     />
                     <PrivateRoute
                     exact

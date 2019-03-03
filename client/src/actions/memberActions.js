@@ -12,7 +12,7 @@ import {
   // EDIT_COMMENT
 } from "./types";
 
-// Add Post
+// Add Member
 export const addMember = memberData => dispatch => {
   dispatch(clearErrors());
   axios
@@ -27,6 +27,25 @@ export const addMember = memberData => dispatch => {
       dispatch({
         type: GET_ERRORS,
         payload: err.response.data
+      })
+    );
+};
+
+// Get profile by handle
+export const getMemberById = id => dispatch => {
+  dispatch(setMemberLoading());
+  axios
+    .get(`/api/members/id/${id}`)
+    .then(res =>
+      dispatch({
+        type: GET_MEMBER,
+        payload: res.data
+      })
+    )
+    .catch(err =>
+      dispatch({
+        type: GET_MEMBER,
+        payload: null
       })
     );
 };
@@ -69,7 +88,7 @@ export const getMember = id => dispatch => {
     );
 };
 
-// Delete Post
+// Delete Member
 export const deleteMember = id => dispatch => {
   axios
     .delete(`/api/members/${id}`)
@@ -86,6 +105,8 @@ export const deleteMember = id => dispatch => {
       })
     );
 };
+
+
 
 // //Edit MEMBER ***** FIX 
 // export const editMember = (member, updatedInfo) => dispatch => {
