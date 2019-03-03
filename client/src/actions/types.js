@@ -21,3 +21,10 @@ export const EDIT_COMMENT = "EDIT_COMMENT";
 export const COMMENT_LOADING = "COMMENT_LOADING";
 export const GET_COMMENT = "GET_COMMENT";
 export const GET_COMMENTS = "GET_COMMENTS";
+
+export const GET_MEMBERS = "GET_MEMBERS";
+export const GET_MEMBER = "GET_MEMBER";
+export const DELETE_MEMBER = "DELETE_MEMBER";
+export const ADD_MEMBER = "ADD_MEMBER";
+export const MEMBER_LOADING = "MEMBER_LOADING";
+export const EDIT_MEMBER = "EDIT_MEMBER";

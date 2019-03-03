@@ -4,11 +4,13 @@ import errorReducer from "./errorReducer";
 import profileReducer from "./profileReducer";
 import postReducer from "./postReducer";
 import eventReducer from "./eventReducer";
+import memberReducer from "./memberReducer";
 
 export default combineReducers({
   auth: authReducer,
   errors: errorReducer,
   profile: profileReducer,
   post: postReducer,
-  event: eventReducer
+  event: eventReducer,
+  member: memberReducer
 });

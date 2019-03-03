@@ -8,8 +8,8 @@ const users = require("./routes/api/users");
 const profile = require("./routes/api/profile");
 const posts = require("./routes/api/posts");
 const events = require("./routes/api/events");
-const postsmissions = require("./routes/api/postsmissions");
-const postsoutdoors = require("./routes/api/postsoutdoors");
+const members = require("./routes/api/members");
+const notes = require("./routes/api/notes");
 
 const app = express();
 
@@ -40,10 +40,12 @@ app.use("/api/users", users);
 app.use("/api/profile", profile);
 app.use("/api/posts", posts);
 app.use("/api/events", events);
-//extra routes for features
-app.use("/api/posts-missions", postsmissions);
+app.use("/api/members", members);
+// app.use("/api/notes", notes);
 
-app.use("/api/posts-outdoors", postsoutdoors);
+//extra routes for features
+
+
 
 //Server Static Assets if in production
 if (process.env.NODE_ENV === "production") {
