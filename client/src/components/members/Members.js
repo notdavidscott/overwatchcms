@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import MembersList from './MembersList';
-
 import Spinner from '../common/Spinner';
+import MemberItem from './MemberItem';
 import { getMembers } from '../../actions/memberActions';
-
-
 
 class Members extends Component {
   componentDidMount() {
@@ -15,16 +12,17 @@ class Members extends Component {
 
     render() {
       const { members, loading } = this.props.member;
-      let memberContent;
+      let memberItems;
 
       if (members === null || loading) {
-        memberContent = <Spinner />;
+        memberItems = <Spinner />;
       } else {
         if (members.length > 0) {
-            <MembersList />
-           
+           memberItems = members.map(member => (
+             <MemberItem key={member._id} member={member} />
+           ));
         } else {
-          memberContent = <h4>No members found...</h4>;
+          memberItems = <h4>No members found...</h4>;
         }
        
       }
@@ -35,7 +33,7 @@ class Members extends Component {
         <div className="members-list">
           <div className="row">
           <div className="col-md-12">
-            {memberContent}
+              {memberItems}
             </div>
           </div>
         </div>

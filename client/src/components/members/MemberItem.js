@@ -24,9 +24,14 @@ class MemberItem extends Component {
     return (
       <FadeIn>
          <div className="card card-body bg-light mb-3">
-       
-     {member.name}
-     </div>
+         <div className="row">
+          <div className="col-2">
+          <Link to={`/member/${member._id}`}>
+            {member.name}
+            </Link>
+            </div>
+            </div>
+         </div>
     </FadeIn>
     );
   }
