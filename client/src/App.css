@@ -261,11 +261,22 @@ nav li a:hover {
   border: none;
   transition: .5s;
 }
-
-
 .post-card {
   background-color: rgb(247, 247, 247);
   border-radius: 0px;
+}
+.member-names {
+  color: black;
+  text-decoration: none;
+}
+.add-circle {
+  font-size: 2em;
+  color:  rgb(74, 194, 110);
+  vertical-align: text-bottom;
+}
+.page-name {
+  font-size: 5em;
+  color:  rgb(209, 209, 209);
 }
 
 @media (max-width: 700px) {

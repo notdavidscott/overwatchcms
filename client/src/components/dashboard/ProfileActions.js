@@ -8,7 +8,7 @@ const ProfileActions = () => {
 <div className="row"> 
       <div className="col-md-12">
         
-      <h4 className="thin-text text-center text-secondary">OVERWATCH</h4>
+      <h4 className="thin-text text-center text-secondary">-OVERWATCH-</h4>
       <br/>
 
       <div className="col-6 col-md-6 m-auto">
@@ -20,19 +20,19 @@ const ProfileActions = () => {
      <div class="row">
      <div className="col-sm-12 col-md-4 col-lg-3">
         <Link to="/members" className="btn btn-block btn-light dashboard-option">
-        <i className="fas fa-users blue-text icon-sizing-1" /><br/>
+        <i className="fas fa-user blue-text icon-sizing-1" /><br/>
            Members
         </Link> 
      </div>
         <div className="col-sm-12 col-md-4 col-lg-3">
         <Link to="/add-experience" className="btn btn-block btn-light dashboard-option"> 
-        <i className="fas fa-user-circle blue-text icon-sizing-1" /><br/>
+        <i className="fas fa-clock blue-text icon-sizing-1" /><br/>
             Reminders
         </Link>
        </div>
      <div className="col-sm-12 col-md-4 col-lg-3">
         <Link to="/add-interests" className="btn btn-block btn-light dashboard-option">
-        <i className="fas fa-briefcase blue-text icon-sizing-1" /><br/>
+        <i className="fas fa-dollar-sign blue-text icon-sizing-1" /><br/>
             Finance
         </Link>
         </div>

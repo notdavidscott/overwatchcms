@@ -35,7 +35,7 @@ export const addMember = memberData => dispatch => {
 export const getMemberById = id => dispatch => {
   dispatch(setMemberLoading());
   axios
-    .get(`/api/members/id/${id}`)
+    .get(`/api/members/${id}`)
     .then(res =>
       dispatch({
         type: GET_MEMBER,

@@ -31,14 +31,23 @@ class Member extends Component {
         } else {
             memberContent = (
                 <div>
-                    <div className="row">
+            <div className="row">
             <div className="col-md-6">
                <Link to="/members" className="btn btn-light mb-3 float-left">
                 to Members
               </Link>
               </div>
               </div>
+              <div className="row">
+              <div className="col-sm-12">
+                Name: {member.name}<br/>
+                Email: {member.email}<br/>
+                Phone: {member.phone}<br/>
+           
               </div>
+              </div>
+              </div>
+             
             )
         }
 
@@ -47,9 +56,7 @@ class Member extends Component {
             <div className="profile">   
                 <div className="container">
                 <div className="row">
-                    <div className="col-md-12">
-                        {memberContent}
-                    </div>
+                    <div className="col-md-12">{memberContent}</div>
                 </div>              
                 </div>
             </div>

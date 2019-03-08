@@ -29,7 +29,7 @@ class Dashboard extends Component {
           <div>
             <hr className="no-padding" />
             <p className="lead text-muted">
-              Welcome{" "}
+              Welcome,{" "}
               <Link to={`/profile/${profile.handle}`}>
                 <span className="blue-text">{user.name}</span>
               </Link>
@@ -49,7 +49,7 @@ class Dashboard extends Component {
         // User is logged in but has no profile
         dashboardContent = (
           <div className="welcome-page">
-            <p className="lead text-muted">Welcome {user.name}</p>
+            <p className="lead text-muted">Welcome, {user.name}</p>
             <p>Text to be added, regarding the intro</p>
            
             <br />
@@ -69,7 +69,7 @@ class Dashboard extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="display-4">Dashboard</h1>
+              <span className="page-name">Dashboard</span>
               {dashboardContent}
             </div>
           </div>
