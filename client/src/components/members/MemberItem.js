@@ -27,7 +27,7 @@ class MemberItem extends Component {
           <Link to={`/members/${member._id}`}>
           <div className="card card-body bg-light mb-3">
          <div className="row">
-          <div className="col-md-6">
+          <div className="col-sm-12">
            <span className="member-names"> {member.name} </span>
            
             </div>

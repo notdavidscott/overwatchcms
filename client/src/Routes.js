@@ -23,6 +23,7 @@ import Groups from "./components/groups/Groups";
 
 import Member from "./components/member/Member";
 import Members from "./components/members/Members";
+import AddMember from "./components/members/AddMember";
 
 import Posts from "./components/posts/Posts";
 import Post from "./components/post/Post";
@@ -86,6 +87,7 @@ function Routes({ auth }) {
                     <PrivateRoute path="/event/:id" component={PostEvents} />
                     <PrivateRoute exact path="/communities" component={Groups} />
                     <PrivateRoute exact path="/add-group" component={AddGroup} />
+                    <PrivateRoute exact path="/add-member" component={AddMember} />
                     <PrivateRoute exact path="/feed" component={Posts} />
                     <PrivateRoute exact path="/post/:id" component={Post} />
                     <Route exact path="/profiles" component={Profiles} />
