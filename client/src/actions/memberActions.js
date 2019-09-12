@@ -13,16 +13,18 @@ import {
 } from "./types";
 
 // Add Member
-export const addMember = memberData => dispatch => {
+export const addMember = (memberData, history) => dispatch => {
   dispatch(clearErrors());
   axios
     .post("/api/members", memberData)
+    
     .then(res =>
       dispatch({
         type: ADD_MEMBER,
         payload: res.data
-      })
-    )
+      }), 
+      
+    ).then(res => history.push('/members'))
     .catch(err =>
       dispatch({
         type: GET_ERRORS,
