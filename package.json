@@ -35,7 +35,7 @@
     "randomatic": "^3.1.0",
     "react": "^16.5.2",
     "reactstrap": "^6.5.0",
-    "validator": "^9.4.1"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"
